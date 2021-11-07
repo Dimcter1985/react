@@ -1,10 +1,22 @@
 import './App.css';
-import Example1 from './components/Example1'
+import Base from './components/Base'
+import Conditions from './components/Conditions'
+import Functions from './components/Functions'
+import Events from './components/Events'
+import Objects from './components/Objects'
+import States from './components/States'
 
 function App() {
 
   return (
-    <Example1/>
+    <>
+      <Base />
+      <Conditions />
+      <Functions />
+      <Events />
+      <Objects />
+      <States />
+    </>
   );
   
 }

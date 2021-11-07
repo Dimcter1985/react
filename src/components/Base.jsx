@@ -1,5 +1,5 @@
 
-const Example1 = () => {
+const Base = () => {
   const rows = [1, 2, 3];
   const cells = [1, 2, 3];
   const num1 = 3;
@@ -7,7 +7,7 @@ const Example1 = () => {
 
   return (
     <div>
-      <h3>Example1</h3>
+      <h3>Base</h3>
       <table className="table">
         <tbody>
           {rows.map((row) => (
@@ -24,4 +24,4 @@ const Example1 = () => {
   );
 }
 
-export default Example1;
+export default Base;
