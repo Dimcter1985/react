@@ -5,6 +5,7 @@ const States = () => {
   const [lastName, setLastName] = useState("Dmitriev");
   let [age, setAge] = useState(36);
   const [banned, setBan] = useState(false);
+  const [simbols, setSimbols] = useState('');
 
   const changeFirstName = (ev) => setFirstName(ev.target.value);
   const changeLastName = (ev) => setLastName(ev.target.value);
@@ -20,6 +21,8 @@ const States = () => {
     }
   };
 
+  const showSimbols = (ev) => setSimbols(ev.target.value);
+
   return (
     <div>
       <h3>States</h3>
@@ -27,6 +30,7 @@ const States = () => {
       <p>{lastName}</p>
       <p>{age}</p>
       <p>{banned ? "забанен" : "не забанен"}</p>
+      <p>колличество символов = {simbols.length}</p>
       <hr />
       <input onChange={changeFirstName} value={firstName} />
       <br />
@@ -36,6 +40,8 @@ const States = () => {
       <hr />
       <button onClick={ageUp}>+</button>
       <button onClick={ageDown}>-</button>
+      <hr />
+      <input value={simbols} onChange={showSimbols}/>
     </div>
   );
 };
