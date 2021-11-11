@@ -5,7 +5,9 @@ import Functions from './components/Functions'
 import Events from './components/Events'
 import Objects from './components/Objects'
 import States from './components/States'
-import Forms from './components/Forms'
+import Inputs from './components/Inputs'
+import Textareas from './components/Textareas'
+import Checkboxes from './components/Checkboxes'
 
 function App() {
 
@@ -17,7 +19,9 @@ function App() {
       <Events />
       <Objects />
       <States />
-      <Forms />
+      <Inputs />
+      <Textareas />
+      <Checkboxes />
     </>
   );
   

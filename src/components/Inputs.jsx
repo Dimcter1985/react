@@ -1,7 +1,7 @@
 import { useState } from "react";
 import dayjs from "dayjs";
 
-const Forms = () => {
+const Inputs = () => {
   const [value1, setValue1] = useState(0);
   const [value2, setValue2] = useState(0);
   const [result, setResult] = useState(0);
@@ -29,13 +29,15 @@ const Forms = () => {
   const [res, setRes] = useState(null);
 
   const toSum = (ev) => {
-    let result = ev.target.value.split('').reduce((s, el) => (+s + +el))
-    setRes(result)
+    if(ev.target.value) {
+      let result = ev.target.value.split('').reduce((s, el) => (+s + +el))
+      setRes(result)
+    }
   }
 
   return (
     <div>
-      <h3>Forms</h3>
+      <h3>Inputs</h3>
       <p>{result}</p>
       <input value={value1} onChange={changeValue1} />
       <input value={value2} onChange={changeValue2} />
@@ -54,4 +56,4 @@ const Forms = () => {
   );
 };
 
-export default Forms;
+export default Inputs;
