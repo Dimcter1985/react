@@ -8,6 +8,8 @@ import States from './components/States'
 import Inputs from './components/Inputs'
 import Textareas from './components/Textareas'
 import Checkboxes from './components/Checkboxes'
+import Selects from './components/Selects'
+import Radiobuttons from './components/Radiobuttons'
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
       <Inputs />
       <Textareas />
       <Checkboxes />
+      <Selects />
+      <Radiobuttons />
     </>
   );
   
