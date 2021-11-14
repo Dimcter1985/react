@@ -10,6 +10,8 @@ import Textareas from './components/Textareas'
 import Checkboxes from './components/Checkboxes'
 import Selects from './components/Selects'
 import Radiobuttons from './components/Radiobuttons'
+import DefaultValues from './components/DefaultValues'
+import Tusck1 from './components/Tusck1'
 
 function App() {
 
@@ -26,6 +28,8 @@ function App() {
       <Checkboxes />
       <Selects />
       <Radiobuttons />
+      <DefaultValues />
+      <Tusck1 />
     </>
   );
   
