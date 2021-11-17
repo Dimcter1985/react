@@ -11,7 +11,8 @@ import Checkboxes from './components/Checkboxes'
 import Selects from './components/Selects'
 import Radiobuttons from './components/Radiobuttons'
 import DefaultValues from './components/DefaultValues'
-import Tusck1 from './components/Tusck1'
+import Tusk1 from './components/Tusk1'
+import Tusk2 from './components/Tusk2'
 
 function App() {
 
@@ -29,7 +30,8 @@ function App() {
       <Selects />
       <Radiobuttons />
       <DefaultValues />
-      <Tusck1 />
+      <Tusk1 />
+      <Tusk2 />
     </>
   );
   
