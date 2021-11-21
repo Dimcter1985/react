@@ -17,6 +17,8 @@ import Tusk3 from './components/Tusk3.jsx'
 import Tusk4 from './components/Tusk4.jsx'
 import Tusk5 from './components/Tusk5.jsx'
 import Tusk6 from './components/Tusk6.jsx'
+import Employee from './components/Employee.jsx'
+import Products from './components/Products.jsx'
 
 function App() {
 
@@ -40,6 +42,20 @@ function App() {
       <Tusk4 />
       <Tusk5 />
       <Tusk6 />
+      <h3>Employee</h3>
+      <Employee
+        firstName="Dmitiy"
+        middleName="Dmitrievich"
+        lastName="Rybnikov"
+        salary="100 000 rub"
+      />
+      <Employee
+        firstName="Roman"
+        middleName="Dmitrievich"
+        lastName="Rybnikov"
+        salary="30 000 rub"
+      />
+      <Products />
     </>
   );
   
